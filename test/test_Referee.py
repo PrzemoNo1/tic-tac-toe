@@ -3,7 +3,7 @@ import unittest
 from src import Referee
 
 class RefereeUnitTest(unittest.TestCase):
-    def __init__(self):
+    def setUp(self):
         self.sut = Referee.Referee()
 
     def test_referre_should_detect_vertical_win(self):

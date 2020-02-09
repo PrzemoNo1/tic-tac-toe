@@ -7,7 +7,7 @@ class BoardUnitTest(unittest.TestCase):
         self.sut = Board.Board()
 
     def test_board_should_be_created_with_empty_values(self):
-        self.assertEquals(self.sut.get_board(),
+        self.assertEqual(self.sut.get_board(),
             [
                 ' ', ' ', ' ',
                 ' ', ' ', ' ',
@@ -24,7 +24,7 @@ class BoardUnitTest(unittest.TestCase):
             [
                 'X', ' ', ' ',
                 'D', 'A', ' ',
-                'C', ' ', '0',
+                'C', ' ', 'O',
             ])
 
     def test_board_should_return_value_of_field(self):
