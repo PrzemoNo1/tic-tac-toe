@@ -50,3 +50,6 @@ class BoardUnitTest(unittest.TestCase):
         self.assertFalse(self.sut.is_field_empty(7))
         self.assertTrue(self.sut.is_field_empty(8))
         self.assertFalse(self.sut.is_field_empty(9))
+
+    def test_board_should_convert_str_to_int(self):
+        self.sut.set_field('5', 'A')

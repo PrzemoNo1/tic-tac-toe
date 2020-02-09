@@ -41,3 +41,6 @@ class TestInputCheck(unittest.TestCase):
 
     def test_example2(self):
         self.assertEqual(self.sut.is_in_range('Invalid message'), False)
+
+    def test_convert_str_to_int(self):
+        self.assertEqual(self.sut.is_in_range("1"), True)

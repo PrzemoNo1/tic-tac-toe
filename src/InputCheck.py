@@ -4,9 +4,10 @@ class InputCheck:
         self._max_value = 9
 
     def is_in_range(self, user_input):
+        int_input = 0
         try:
-            int(user_input)
+            int_input = int(user_input)
         except:
             return False
-        return user_input >= self._min_value \
-            and user_input <= self._max_value
+        return int_input >= self._min_value \
+            and int_input <= self._max_value

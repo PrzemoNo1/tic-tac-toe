@@ -19,4 +19,4 @@ class Board:
         return self._board
 
     def _to_field_number(self, user_field_number):
-        return user_field_number - 1
+        return int(user_field_number) - 1
