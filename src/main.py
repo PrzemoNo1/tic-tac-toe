@@ -15,7 +15,7 @@ def switch_player():
     if current_player == 'X':
         current_player = 'O'
     else:
-        current_player = 'O'
+        current_player = 'X'
 
 
 input_check = InputCheck()
@@ -28,3 +28,4 @@ while referee.get_status(board.get_board()) == Status.Ongoing:
     while not input_check.is_in_range(field_number):
         field_number = input("Wrong value. Choose between from 1 to 9: ")
     board.set_field(field_number, current_player)
+    switch_player()
